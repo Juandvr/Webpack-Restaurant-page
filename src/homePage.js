@@ -1,4 +1,5 @@
 import assets from './mediaLoader.js'
+import dishesData from './dishes.json'
 import { createMenu } from './menuPage.js'
 
 function LoadHome() {
@@ -32,11 +33,10 @@ function LoadHome() {
     const menuSection = document.createElement('div')
     menuSection.className = 'menuSection'
     
-    const dishes = [
-        {name: 'Pizza', src: assets['pizza.png'], alt: 'Peperonni pizza', price: '$15'},
-        {name: 'Pasta', src: assets['pasta.webp'], alt: 'Bolognesa pasta', price: '$20'},
-        {name: 'Risotto', src: assets['risotto.webp'], alt: 'Risotto dish', price: '$16'}
-    ]
+    const dishes = dishesData.slice(0, 3).map(dish => ({
+        ...dish,
+        src: assets[dish.fileName]
+    }))
 
     const menuFeat = document.createElement('div')
 
