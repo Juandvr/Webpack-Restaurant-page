@@ -1,4 +1,4 @@
-import "./styles/reset.css"
+import "./styles/main.css"
 import { LoadHome } from "./homePage.js"
 import { loadMenu } from "./menuPage.js"
 

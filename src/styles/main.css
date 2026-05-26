@@ -57,9 +57,27 @@ textarea {
   font: inherit;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
+button {
+  background-color: #A63D40;
+  color: rgb(243, 236, 236);
+  border-radius: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-style: none;
+  margin: 3vh 1vh;
+}
+
+button:hover {
+  background-color: #983639;
+}
+
+header {
+  background-color: #151515;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: center;
+}
+
+.logo {
+  width: 25%;
 }
