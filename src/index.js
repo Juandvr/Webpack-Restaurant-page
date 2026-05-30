@@ -1,4 +1,5 @@
 import "./styles/main.css"
+import "./styles/homePage.css"
 import { LoadHome } from "./homePage.js"
 import { loadMenu } from "./menuPage.js"
 

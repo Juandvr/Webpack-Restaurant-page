@@ -6,6 +6,7 @@ function createMenu(dishes){
 
     dishes.forEach(dish => {
         const dishCard = document.createElement('div')
+        dishCard.className = 'dishCard'
         const dishImage = new Image()
         dishImage.src = dish.src
         dishImage.alt = dish.alt

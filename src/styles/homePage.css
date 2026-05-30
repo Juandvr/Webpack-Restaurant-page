@@ -1,0 +1,27 @@
+.heroHome {
+    min-height: 100vh;
+    background-image: url(../media/pizzaBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+}
+
+.heroMsg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.heroText1, .heroText2 {
+    font-family: cursive;
+    justify-self: center;
+    color: antiquewhite;
+    font-size: xx-large;
+}

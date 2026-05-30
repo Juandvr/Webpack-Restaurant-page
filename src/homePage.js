@@ -10,23 +10,23 @@ function LoadHome() {
     const heroSection = document.createElement('div')
     heroSection.className = 'heroHome'
     
-    const heroText = document.createElement('p')
-    heroText.textContent = 'The best pizzeria'
-    heroText.className = 'heroText'
+    const heroText1 = document.createElement('p')
+    heroText1.textContent = 'Delicious food'
+    heroText1.className = 'heroText1'
+
+    const heroText2 = document.createElement('p')
+    heroText2.textContent = 'and great service'
+    heroText2.className = 'heroText2'
 
     const ctaHome = document.createElement('button')
     ctaHome.textContent = 'Make a reservation'
     ctaHome.className = 'ctaHome'
 
-    const menuBtn = document.createElement('button')
-    menuBtn.textContent = 'See menu'
-    menuBtn.className = 'menuBtn'
+    const heroMsg = document.createElement('div')
+    heroMsg.className = 'heroMsg'
+    heroMsg.append(heroText1, heroText2, ctaHome)
 
-    const heroImg = new Image()
-    heroImg.src = assets['heroImg.webp']
-    heroImg.className = 'heroImage'
-
-    heroSection.append(heroText, ctaHome, menuBtn, heroImg)
+    heroSection.append(heroMsg)
 
     // Menu section
 
@@ -40,7 +40,11 @@ function LoadHome() {
 
     const menuFeat = document.createElement('div')
 
-    menuFeat.append(createMenu(dishes))
+    const menuBtn = document.createElement('button')
+    menuBtn.textContent = 'See menu'
+    menuBtn.className = 'menuBtn'
+
+    menuFeat.append(createMenu(dishes), menuBtn)
 
     menuSection.append(menuFeat)
 

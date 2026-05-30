@@ -64,7 +64,7 @@ button {
   padding: 5px 20px;
   cursor: pointer;
   border-style: none;
-  margin: 3vh 1vh;
+  margin: 1rem 0.5rem;
 }
 
 button:hover {
