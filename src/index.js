@@ -1,5 +1,6 @@
 import "./styles/main.css"
 import "./styles/homePage.css"
+import "./styles/menuPage.css"
 import { LoadHome } from "./homePage.js"
 import { loadMenu } from "./menuPage.js"
 

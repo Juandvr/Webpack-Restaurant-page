@@ -8,7 +8,7 @@ function LoadHome() {
     // Hero section
 
     const heroSection = document.createElement('div')
-    heroSection.className = 'heroHome'
+    heroSection.className = 'heroSection'
     
     const heroText1 = document.createElement('p')
     heroText1.textContent = 'Delicious food'
@@ -32,6 +32,10 @@ function LoadHome() {
 
     const menuSection = document.createElement('div')
     menuSection.className = 'menuSection'
+
+    const menuText = document.createElement('p')
+    menuText.className = 'menuText'
+    menuText.textContent = 'Featured items'
     
     const dishes = dishesData.slice(0, 3).map(dish => ({
         ...dish,
@@ -39,14 +43,15 @@ function LoadHome() {
     }))
 
     const menuFeat = document.createElement('div')
+    menuFeat.className = 'menuFeat'
 
     const menuBtn = document.createElement('button')
     menuBtn.textContent = 'See menu'
     menuBtn.className = 'menuBtn'
 
-    menuFeat.append(createMenu(dishes), menuBtn)
+    menuFeat.append(menuBtn)
 
-    menuSection.append(menuFeat)
+    menuSection.append(menuText, createMenu(menuFeat, dishes))
 
     // Value proposition section
 

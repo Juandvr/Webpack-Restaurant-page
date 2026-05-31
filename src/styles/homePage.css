@@ -1,4 +1,6 @@
-.heroHome {
+/* Hero Section */
+
+.heroSection {
     min-height: 100vh;
     background-image: url(../media/pizzaBg.jpg);
     background-size: cover;
@@ -24,4 +26,30 @@
     justify-self: center;
     color: antiquewhite;
     font-size: xx-large;
+}
+
+/* Menu Section */
+
+.menuSection {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.menuText {
+    grid-row: 1 / span 1;
+    font-size: 3rem;
+}
+
+.menuFeat {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+}
+
+.menuBtn {
+    grid-column: 2;
+    grid-row: 2;
 }

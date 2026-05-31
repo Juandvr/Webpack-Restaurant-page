@@ -1,8 +1,7 @@
 import assets from './mediaLoader.js'
 import dishesData from './dishes.json'
 
-function createMenu(dishes){
-    const menu = document.createElement('div')
+function createMenu(div, dishes){
 
     dishes.forEach(dish => {
         const dishCard = document.createElement('div')
@@ -14,11 +13,13 @@ function createMenu(dishes){
         const dishPrice = document.createElement('p')
         dishName.textContent = dish.name
         dishPrice.textContent = dish.price
-        dishCard.append(dishImage, dishName, dishPrice)
-        menu.append(dishCard)
+        const dishBtn = document.createElement('button')
+        dishBtn.textContent = 'Add to Cart'
+        dishCard.append(dishImage, dishName, dishPrice, dishBtn)
+        div.append(dishCard)
     })
 
-    return menu
+    return div
 }
 
 function loadMenu(){

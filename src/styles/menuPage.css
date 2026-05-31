@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dishCard {
+    display: grid;
+    width: 15%;
+    height: 10%;
+    margin: 1rem;
+    background-color: #E5FCF5;
+    border-radius: 15px;
+    padding: 1rem;
+    justify-items: center;
+}
