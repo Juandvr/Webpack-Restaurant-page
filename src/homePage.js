@@ -56,6 +56,7 @@ function LoadHome() {
     // Value proposition section
 
     const valueSection = document.createElement('div')
+    valueSection.className = 'valueSection'
 
     const chefImg = new Image()
     chefImg.src = assets['chef.webp']
@@ -64,11 +65,22 @@ function LoadHome() {
     const valueH = document.createElement('h2')
     valueH.className = 'valueH'
     valueH.textContent = 'We are more than a restaurant'
-    const valueP = document.createElement('p')
-    valueP.className = 'valueP'
-    valueP.textContent = 'We offer various advantages related to the food business'
+    
+    const props = [
+        '24 hour service',
+        'Fast delivery',
+        'Great variety in menu'
+    ]
 
-    valueProp.append(valueH, valueP)
+    const propList = document.createElement('ul')
+
+    props.forEach(prop => {
+        const item = document.createElement('li')
+        item.textContent = prop
+        propList.append(item)
+    })
+
+    valueProp.append(valueH, propList)
     valueSection.append(chefImg, valueProp)
 
     content.append(heroSection, menuSection, valueSection)

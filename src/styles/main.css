@@ -83,3 +83,11 @@ header {
 .logo {
   width: 25%;
 }
+
+footer {
+  background-color: #151515;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: center;
+  height: 15vh;
+}

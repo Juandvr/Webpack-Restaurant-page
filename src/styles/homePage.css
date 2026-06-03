@@ -31,6 +31,7 @@
 /* Menu Section */
 
 .menuSection {
+    margin: 4rem 0rem;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -52,4 +53,21 @@
 .menuBtn {
     grid-column: 2;
     grid-row: 2;
+}
+
+/* Value Section */
+
+.valueSection {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.valueSection > img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 100%;
 }
